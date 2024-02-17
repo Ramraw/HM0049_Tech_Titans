@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Care login</title>
+    <link rel = "icon" href = "img/healthcare.png">
+    <link rel="stylesheet"  href="login.css">
+    <script src="annyang.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"rel="stylesheet">
+    <link rel="stylesheet" href="services.html">
+    <link rel="stylesheet" href="index.html">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <a href="#">Care-A-Lot</a>
+            </div>
+            <div class="video__icon">
+                <a href="live_maps.html"><div class="circle--outer"></div></a>
+                <a href="live_maps.html"><div class="circle--inner"></div></a> 
+                <a href="live_maps.html"> <p style="font-size: 15px;font-weight:bolder;">LIVE</p></a>
+                <a href="login.html" style="position:relative;left: 456px;top: -55px;"><i class="fas fa-user-plus fa-3x " style="color:rgb(255, 255, 255);"></i></a>
+               </div>
+            <nav>
+                <a href="index.html">Home</a> 
+                <a href="about.html">About</a> 
+                <a href="services.html">Services</a> 
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+    
+    
+    
+    <section>
+
+      <div class="login-head">
+        <h2>THIS IS A VOICE MODULATION SYSTEM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/voice-control.png" height="70px"></h2> 
+      </div>
+        <br><br><br><br>
+    <div class="container">
+        <div class="bg1">
+<div class="box">
+<img  class="pic" src="img/s.jpeg" alt="" width="350px" height="200px">
+<h2>Already have an account?</h2>
+<button class="signinBtn">Sign In</button>
+</div>
+<div class="box1">
+    <h2>Don't have an account?</h2>
+    <button class="signupBtn">Sign Up</button>
+    </div>
+        </div>
+        <div class="formBx">
+<div class="in">
+    <form>
+        <h3>Sign In</h3>
+        <input id="email_id" type="text" placeholder="Email Id">
+        <input id="password" type="password" placeholder="Password">
+        <!-- <a href="#" class="forgot">Forgot Password ?</a><br><br> -->
+        <button class="forgot">Forgot Password ?</button><br><br>
+        <button id="sign_in">Sign In</button><br>
+        <!-- <h4 id="alternative">OR</h4><br> -->
+        <div id="checks">
+        <!-- <a href="#"><img  id="pico" src="google.jpeg" alt="" width="40px" height="40px" href="">&nbsp;&nbsp;</a>
+        <a href="#"><img  id="pico" src="ig.jpeg" alt="" width="40px" height="40px">&nbsp;&nbsp;</a>
+        <a href="#"><img  id="pico" src="fb.jpeg" alt="" width="40px" height="40px">&nbsp;&nbsp;</a>
+        <a href="#"><img  id="pico" src="twitter.jpeg" alt="" width="40px" height="40px">&nbsp;&nbsp;</a> -->
+        </div>
+    </form>
+</div>
+<div class="up">
+    <form>
+        <h3>Sign Up</h3>
+        <input id="firstname" type="text" placeholder="First Name" name="firstname">
+        <input id="lastname"type="text" placeholder="Last Name" name="lastname">
+        <input id="phone" type="number" placeholder="Phone" name="phone">
+        <input id="email" type="email" placeholder="Email" name="email">
+        <input id="password1" type="password" placeholder="Password" name="password1">
+        <input id="cnfpassword" type="password" placeholder="Confirm Password" name="cnfpassword">
+        <button id="signup">Submit </button>
+    </form>
+</div>
+        </div>
+    </div>
+    <script>
+        const signinBtn = document.querySelector('.signinBtn');
+        const signupBtn = document.querySelector('.signupBtn');
+        const formBx = document.querySelector('.formBx');
+        const body = document.querySelector('body');
+        signupBtn.onclick = function(){
+            formBx.classList.add('active')
+            body.classList.add('active')
+        }
+        signinBtn.onclick = function(){
+            formBx.classList.remove('active')
+            body.classList.remove('active')
+        }
+    </script>
+    </section>
+    <script>
+        if (annyang) {
+    var commands = {
+      'first *tag': function(variable) {
+        let email_id =document.getElementById("email_id");
+        email_id.value = variable;
+      },
+      'second *tag': function(variable) {
+        let password =document.getElementById("password");
+        password.value = variable;
+      },
+      'third *tag': function() {
+    
+        login();
+    
+      }
+
+    };
+    annyang.addCommands(commands);
+  
+    // Start listening. You can call this here, or attach this call to an event, button, etc.
+    annyang.start();
+  }
+    </script>
+
+    <script>
+    if (annyang) {
+    var commands = {
+      'one *tag': function(variable) {
+        let firstname =document.getElementById("firstname");
+        firstname.value = variable;
+        console.log(firstname.value)
+      },
+      'two *tag': function(variable) {
+        let lastname =document.getElementById("lastname");
+        lastname.value = variable;
+      },
+      'phone *tag': function(variable) {
+        let phone =document.getElementById("phone");
+        phone.value = variable;
+       },
+       'mail *tag': function(variable) {
+        let email =document.getElementById("email");
+        email.value = variable.split(" ").join("");
+       },
+       'five *tag': function(variable) {
+        let password1 =document.getElementById("password1");
+        password1.value = variable;
+       },
+       'six *tag': function(variable) {
+        let cnfpassword =document.getElementById("cnfpassword");
+        cnfpassword.value = variable;
+       },
+       'final *tag': function() {
+        let signup1 =document.getElementById("signup");
+        signup();
+    
+      }
+
+    };
+  
+    // Add our commands to annyang
+    annyang.addCommands(commands);
+  
+    // Start listening. You can call this here, or attach this call to an event, button, etc.
+    annyang.start();
+  }
+    </script>
+
+
+</body>
+<script src="require.js"></script>
+<script src="function.js"></script>
+
+</html>

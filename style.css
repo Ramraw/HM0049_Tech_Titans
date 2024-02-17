@@ -1,0 +1,326 @@
+
+.carousel-item {
+  height: 65vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.video__icon {
+position: absolute;
+width: 50px;
+left: 1200px;
+top: 18px; }
+
+.video__icon .circle--outer {
+  border: 1px solid rgb(236, 27, 27);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0 auto 5px;
+  position: relative;
+  opacity: .8;
+  -webkit-animation: circle 1.5s ease-in-out infinite;
+          animation: circle 1.5s ease-in-out infinite; }
+.video__icon .circle--inner {
+  background: rgb(236, 27, 27);
+  left: 18px;
+  top: 7px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  opacity: .8; }
+.video__icon p {
+  color: rgb(236, 27, 27);
+  text-align: center; }
+
+@-webkit-keyframes circle {
+from {
+  -webkit-transform: scale(1);
+          transform: scale(1); }
+
+to {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  opacity: 0; } }
+
+@keyframes circle {
+from {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  }
+
+to {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  opacity: 0;
+  } }
+.f-color{
+background-color: #414040;
+
+}
+.h-color{
+background-color: #343634;
+
+
+}
+.form-control
+{
+  position: absolute;
+  left: 790px;
+ margin-top: -17px;
+ height: 30px;
+background-color: #ffffff;
+}
+
+
+#example2 {
+  box-sizing: border-box;
+  font-family: Roboto Slab;
+  font-weight:bold;
+  font-size:38px;
+  width: 1400px;
+  height: 180px;
+  padding-top:50px; 
+  padding-bottom: 20px; 
+  border: 10px solid rgb(0, 0, 0);
+}
+.q-color{
+  color: #982A07;
+
+}
+.h-div{
+  position: absolute;
+  top:1050px;
+  left:300px;
+}
+
+/* styling sidebar */
+.sidehoverbar button {
+  background-color: rgb(95, 32, 32);
+  position: absolute;
+  font-size: 22px;
+  text-decoration: none;
+  Color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 0px 5px 5px 0px;
+  TOP:650PX;
+  left: -55px;
+  transition: 0.5s;
+  opacity: 1;
+}
+
+/* Hover effect on sidebar */
+.sidehoverbar button:hover {
+  left: 0px;
+  opacity: 1;
+  background-color: #6e3737;
+  color: white;
+}
+
+/* float icons*/
+.sidehoverbar i {
+  float: right;
+}
+
+/* defining position of each nav bar */
+.article {
+  top: 50px;
+  width: 200px;
+  height: 55px;
+}
+
+
+
+.wrapper {
+  padding-top: 50px;
+  height: 200px;
+  /*This part is important for centering*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.typing-demo {
+  width: 14ch;
+  animation: typing 3s steps(14), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+
+
+
+
+#city {
+  background-image: url("http://clipart-library.com/newimages/city-clip-art-3.png");
+  position: relative;
+  height: 500px;
+  background-repeat: repeat-x;
+  background-position: -10000px;
+  min-width:400px
+}
+
+.amb {
+  width: 200px;
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translate(-50%, -20%)
+}
+
+
+.ambu{
+  width: 100px;
+  height: auto;
+  position: absolute;
+  left:1600px;
+  top:150px;
+}
+
+
+
+h4 {
+  font-size: 80px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px rgb(230, 169, 169), 0 0 10px rgb(192, 98, 98), 0 0 15px #ecd719, 0 0 20px #eaf825, 0 0 25px #da534a, 0 0 30px #cc6760, 0 0 35px #e7503c;
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 50px #ffffff, 0 0 60px #ffffff, 0 0 70px #ffffff;
+  }
+}
+
+
+.card1,.card2,.card3,.card4{
+
+  box-shadow: 0 5px 85px rgba(0,0,0,0.15);
+  width: 350px;
+  height: 450px;
+  padding: 20px;
+  margin-left: 25px;
+ 
+ }
+
+ .card1:hover,.card2:hover,.card3:hover,.card4 :hover{
+ 
+   box-shadow: 0 15px 50px rgba(0, 0, 0, 0.521);
+   size: 200px;
+  }
+
+#c1{
+  height: 230px;
+}
+
+
+.land {
+  animation: color-land 1s infinite;
+}
+
+@keyframes color-land {
+  0% { color: red; }
+  50% { color: rgb(185, 159, 13); }
+  100% { color: rgb(168, 38, 21); }
+}
+.flood{
+  animation: color-flood 1s infinite;
+}
+@keyframes color-flood {
+  0% { color: rgb(44, 155, 175); }
+  50% { color: blue; }
+  100% { color:rgb(44, 155, 175); }
+}
+.tornado{
+  animation: color-t 1s infinite;
+}
+@keyframes color-t {
+  0% { color: rgb(51, 51, 51); }
+  50% { color: rgb(32, 85, 56); }
+  100% { color:rgb(36, 37, 37); }
+}
+
+.earth{
+  animation: color-e 1s infinite;
+}
+@keyframes color-e {
+  0% { color: rgb(12, 112, 8); }
+  50% { color: rgb(81, 179, 25); }
+  100% { color:rgb(41, 114, 35); }
+}
+
+.modal-body{
+  width: 350px;
+}
+.mob{
+  position: relative;
+  left:50px;
+  top:-17px;
+  width: 200px;
+}
+
+.m-sub{
+  position: relative;
+  left: 150px;
+}
+#c-img{
+  margin-top: 90px;
+ margin-left: 300px;
+}
+.login-head{
+  position: absolute;
+  left:600px;
+ top:50px;
+}
+
+
+
+
+.cardabout{
+  position: absolute;
+  margin-left: 220px;
+  margin-top: 270px;
+  height: 500px;
+  width: 800px;
+  background-color: #da534a;
+  box-shadow: 0 5px 85px rgba(0,0,0,0.15);
+  padding: 20px;
+  justify-content: center;
+  border-radius: 15px 15px 15px 15px;
+}
+.cardabout:hover{
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.521);
+  size: 200px;
+}
+.a-cont{
+  color: white;
+  font-size: 18px;
+  justify-content: center;
+}
