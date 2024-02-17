@@ -20,15 +20,6 @@
         <li><a href="#TechStacks">Built Using</a></li>
       </ul>
     </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-      </ul>
-    </li>
-     <li>
-      <a href="#Sample Images">Sample Images</a>
-     </li>
    
   </ol>
 </details>
