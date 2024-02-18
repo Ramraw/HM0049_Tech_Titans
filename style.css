@@ -13,6 +13,9 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+.container {
+    max-width: 1200px;
+}
 .video__icon {
 position: absolute;
 width: 50px;
@@ -324,8 +327,4 @@ h4 {
   font-size: 18px;
   justify-content: center;
 }
-@media (min-width: 1400px) {
-  .container {
-    max-width: 1200px;
-  }
-}
+
